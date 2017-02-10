@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">手机型号 {{phoneInfo.model}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">操作系统版本 {{phoneInfo.system}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">微信版本号 {{phoneInfo.version}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">窗口宽度 {{phoneInfo.windowWidth}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">窗口高度 {{phoneInfo.windowHeight}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">客户端平台 {{phoneInfo.platform}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">设备像素比 {{phoneInfo.pixelRatio}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">微信设置的语言 {{phoneInfo.language}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">当前网络类型 {{netInfo.networkType}}</text>
+  </view>
+  <contact-button type="default-light" size="20" session-from="weapp"></contact-button>
+</view>

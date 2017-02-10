@@ -1,0 +1,15 @@
+{
+  "apps": {
+    "name": "static-server",
+    "cwd": "/express_static_server/static_server",
+    "script": "bin/www",
+    "exec_interpreter": "bash",
+    "min_uptime": "60s",
+    "max_restarts": 15,
+    "exec_mode": "fork",
+    "error_file": "./static-server-err.log",
+    "out_file": "./static-server-out.log",
+    "pid_file": "./static-server.pid",
+    "watch": false
+  }
+}

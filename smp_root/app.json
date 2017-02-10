@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/phone_info/phone_info"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "Small Program",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      },
+      {
+        "pagePath": "pages/phone_info/phone_info",
+        "text": "phone_info"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  }
+}
