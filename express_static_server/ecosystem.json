@@ -2,12 +2,12 @@
   "apps": [
     {
       "name": "static-server",
-      "cwd": "/root/liteApp/express_static_server/static_server",
+      "cwd": "./static_server",
       "script": "bin/www",
-      "exec_interpreter": "bash",
+      "exec_interpreter": "node",
       "min_uptime": "60s",
       "max_restarts": 15,
-      "exec_mode": "fork",
+      "exec_mode": "cluster",
       "error_file": "./static-server-err.log",
       "out_file": "./static-server-out.log",
       "pid_file": "./static-server.pid",
@@ -27,18 +27,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:ibullet-chzn/File-manage.git",
       "path": "/root/liteApp/express_static_server/",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
-    },
-    "dev": {
-      "user": "node",
-      "host": "212.83.163.1",
-      "ref": "origin/master",
-      "repo": "git@github.com:repo.git",
-      "path": "/var/www/development",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env dev",
-      "env": {
-        "NODE_ENV": "dev"
-      }
+      "post-deploy": "pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
